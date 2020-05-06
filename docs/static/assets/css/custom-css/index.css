@@ -278,7 +278,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .page-title h1{
+    .page-title h1 {
         /*font-size: large !important;*/
     }
 }
@@ -300,10 +300,42 @@
 .card-custom {
     background-color: white;
     border-radius: 5px;
-    padding: 20px 30px;
+    padding: 15px 15px;
     /*border: 1px solid gray;*/
     box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
     /*text-align: justify;*/
+}
+
+.card-custom input,
+.card-custom select,
+.card-custom button,
+.card-custom textarea,
+.card-custom p,
+.card-custom .custom-checkbox,
+.card-custom label,
+.table thead,
+.table tbody,
+.card-custom h6{
+    font-size: x-small !important;
+}
+
+@media (min-width: 992px) {
+    .card-custom input,
+    .card-custom select,
+    .card-custom button,
+    .card-custom textarea,
+    .card-custom p,
+    .card-custom .custom-checkbox,
+    .card-custom label,
+    .table thead,
+    .table tbody,
+    .card-custom h6{
+        font-size: small !important;
+    }
+
+    .card-custom {
+        padding: 15px 25px;
+    }
 }
 
 
@@ -323,7 +355,6 @@
 
 .step3-table {
     font-size: small;
-    margin-top: 20px;
 }
 
 @media (max-width: 576px) {
@@ -403,7 +434,7 @@
 }
 
 .step3-table td {
-    padding: 0.25rem !important;
+    /*padding: 0.25rem !important;*/
 }
 
 .step3-table-nav {
@@ -441,7 +472,7 @@
     }
 
     .step3-table td {
-        padding: 0.5rem !important;
+        /*padding: 0.5rem !important;*/
     }
 
     .step3-table-nav {
@@ -477,7 +508,7 @@
     }
 
     .step3-table td {
-        padding: 0.75rem !important;
+        /*padding: 0.75rem !important;*/
     }
 
     .step3-table-nav {
@@ -518,7 +549,7 @@
     }
 
     .step3-table td {
-        padding: 0.75rem !important;
+        /*padding: 0.75rem !important;*/
     }
 
     .step3-table-nav {
@@ -602,9 +633,10 @@
     text-align: center;
 }
 
+
 .profile-pic {
     border-radius: 50%;
-    width: 90px;
+    width: 190px;
 }
 
 .social-links {
@@ -619,7 +651,6 @@
 
 @media (max-width: 425px) {
     .help-card button,
-    .help-card h6,
     .help-card a {
         font-size: 0.75rem;
     }
@@ -644,8 +675,40 @@ header {
     font-family: 'Poppins', sans-serif;
 }
 
+a:hover {
+    text-decoration: none !important;
+}
+
+a:focus {
+    text-decoration: none !important;
+}
+
 /* MISC ENDS */
 
-.button-checkbox .active:before {
-
+.sub-table > tbody > tr > th,
+.sub-table > tfoot > tr > td,
+.sub-table > tfoot > tr > th,
+.sub-table > thead > tr > td,
+.sub-table > thead > tr > th {
+    border: none !important;
 }
+
+.sub-table td{
+    border: none !important;
+    text-align: left;
+    vertical-align: center;
+}
+
+
+.sub-td{
+    padding: 0px !important;
+}
+
+p{
+    margin: 0px !important;
+}
+
+.card-row {
+}
+
+

@@ -277,6 +277,13 @@
     text-align: center;
 }
 
+@media (max-width: 991.98px) {
+    .page-title h1{
+        /*font-size: large !important;*/
+    }
+}
+
+
 /* HOMEPAGE TITLE ENDS */
 
 /* HELP SECTION STARTS */

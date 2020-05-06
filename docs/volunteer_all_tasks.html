@@ -372,7 +372,7 @@
         if ($('button i').hasClass('fa-angle-down')) {
             $('button i').removeClass('fa-angle-down');
             $('button i').addClass('fa-angle-up');
-        } else {
+        } else if ($('button i').hasClass('fa-angle-up')){
             $('button i').removeClass('fa-angle-up');
             $('button i').addClass('fa-angle-down');
         }

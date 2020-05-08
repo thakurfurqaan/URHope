@@ -313,8 +313,8 @@
 .card-custom p,
 .card-custom .custom-checkbox,
 .card-custom label,
-.table thead,
-.table tbody,
+table thead,
+table tbody,
 .card-custom h6{
     font-size: x-small !important;
 }
@@ -327,8 +327,8 @@
     .card-custom p,
     .card-custom .custom-checkbox,
     .card-custom label,
-    .table thead,
-    .table tbody,
+    table thead,
+    table tbody,
     .card-custom h6{
         font-size: small !important;
     }
@@ -711,4 +711,7 @@ p{
 .card-row {
 }
 
+.table td{
+    vertical-align: middle !important;
+}
 

@@ -70,7 +70,7 @@
             <div class="card-custom mt-2 mt-lg-0 help-card">
                 <div class="row justify-content-between align-items-center">
                     <div class="col">
-                        <h5 class="my-3" style="">All Tasks</h5>
+                        <h5 class="my-3" style="">Explore Tasks</h5>
                     </div>
                     <table class="table step3-table filter-this-table">
                         <thead>
@@ -148,8 +148,8 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2">
-                                            Required No. of Volunteers
+                                        <td colspan="1">
+                                            Volunteers required
                                         </td>
                                         <td colspan="2">
                                             <div class="initiative-description">
@@ -159,8 +159,8 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2">
-                                            Total No. of Volunteers applied
+                                        <td colspan="1">
+                                            Volunteers applied
                                         </td>
                                         <td colspan="2">
                                             <div class="initiative-description">
@@ -179,14 +179,6 @@
                                                     <button class="btn btn-sm btn-outline-primary mt-1">01334-235010
                                                     </button>
                                                 </a>
-                                                <a href="tel:1077-240486">
-                                                    <button class="btn btn-sm btn-outline-primary mt-1">01334-235010
-                                                    </button>
-                                                </a>
-                                                <a href="tel:1077-240486">
-                                                    <button class="btn btn-sm btn-outline-primary mt-1">9897059100
-                                                    </button>
-                                                </a>
                                             </div>
                                         </td>
                                     </tr>
@@ -195,10 +187,10 @@
                                             Website
                                         </td>
                                         <td colspan="3">
-                                            <div class="initiative-description">
-                                                <p class="text-muted" align="left">www.urhope.in
-                                                </p>
-                                            </div>
+                                            <a href="www.urhope.in">
+                                                <button class="btn btn-sm btn-outline-primary mt-1">www.urhope.in
+                                                </button>
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -207,9 +199,15 @@
                                         </td>
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
-                                                <button class="btn btn-success mt-1">Apply</button>
-                                                <button class="btn btn-success mt-1" disabled>Applied</button>
-                                                <button class="btn btn-danger mt-1">Cancel Application</button>
+                                                <a href="volunteer_applied_tasks.html">
+                                                    <button class="btn btn-success mt-1">Apply</button>
+                                                </a>
+                                                <a href="volunteer_applied_tasks.html">
+                                                    <button class="btn btn-success mt-1" disabled>Applied</button>
+                                                </a>
+                                                <a href="volunteer_applied_tasks.html">
+                                                    <button class="btn btn-danger mt-1">Cancel Application</button>
+                                                </a>
                                             </div>
                                         </td>
                                     </tr>
@@ -314,14 +312,6 @@
                                                     <button class="btn btn-sm btn-outline-primary mt-1">01334-235010
                                                     </button>
                                                 </a>
-                                                <a href="tel:1077-240486">
-                                                    <button class="btn btn-sm btn-outline-primary mt-1">01334-235010
-                                                    </button>
-                                                </a>
-                                                <a href="tel:1077-240486">
-                                                    <button class="btn btn-sm btn-outline-primary mt-1">9897059100
-                                                    </button>
-                                                </a>
                                             </div>
                                         </td>
                                     </tr>
@@ -330,21 +320,27 @@
                                             Website
                                         </td>
                                         <td colspan="3">
-                                            <div class="initiative-description">
-                                                <p class="text-muted" align="left">www.urhope.in
-                                                </p>
-                                            </div>
+                                            <a href="www.urhope.in">
+                                                <button class="btn btn-sm btn-outline-primary mt-1">www.urhope.in
+                                                </button>
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="1">
-                                            <p class="mt-1">Contact</p>
+                                            <p class="mt-1">Action</p>
                                         </td>
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
-                                                <button class="btn btn-success mt-1">Apply</button>
-                                                <button class="btn btn-success mt-1" disabled>Applied</button>
-                                                <button class="btn btn-danger mt-1">Cancel Application</button>
+                                                <a href="volunteer_applied_tasks.html">
+                                                    <button class="btn btn-success mt-1">Apply</button>
+                                                </a>
+                                                <a href="volunteer_applied_tasks.html">
+                                                    <button class="btn btn-success mt-1" disabled>Applied</button>
+                                                </a>
+                                                <a href="volunteer_applied_tasks.html">
+                                                    <button class="btn btn-danger mt-1">Cancel Application</button>
+                                                </a>
                                             </div>
                                         </td>
                                     </tr>
@@ -368,13 +364,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <script>
-    $('button i').parent().click(function () {
-        if ($('button i').hasClass('fa-angle-down')) {
-            $('button i').removeClass('fa-angle-down');
-            $('button i').addClass('fa-angle-up');
-        } else if ($('button i').hasClass('fa-angle-up')){
-            $('button i').removeClass('fa-angle-up');
-            $('button i').addClass('fa-angle-down');
+    $('table button i').click(function () {
+        if ($(this).hasClass('fa-angle-down')) {
+            $(this).removeClass('fa-angle-down');
+            $(this).addClass('fa-angle-up');
+        } else {
+            $(this).removeClass('fa-angle-up');
+            $(this).addClass('fa-angle-down');
         }
     });
 </script>

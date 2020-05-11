@@ -315,7 +315,7 @@
 .card-custom label,
 table thead,
 table tbody,
-.card-custom h6{
+.card-custom h6 {
     font-size: x-small !important;
 }
 
@@ -329,7 +329,7 @@ table tbody,
     .card-custom label,
     table thead,
     table tbody,
-    .card-custom h6{
+    .card-custom h6 {
         font-size: small !important;
     }
 
@@ -576,11 +576,39 @@ table tbody,
 
 /* HELP SECTION ENDS */
 
+/* CARD ACCORDION STARTS */
+.card.card-accordion {
+    box-shadow: none;
+    background-color: white;
+    color: black;
+}
+
+.btn-link {
+    color: black !important;
+    text-align: left !important
+}
+
+.card-title {
+    margin: 0px !important;
+}
+
+.btn-link:hover {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.card-header {
+    background-color: white !important;
+}
+
+.card-accordion a{
+    color: black !important;
+}
+
+/* CARD ACCORDION ENDS */
+
 /* CARDS STARTS */
 
-.card-columns {
-    column-count: 1 !important;
-}
 
 .card {
     font-size: 12px;
@@ -602,9 +630,6 @@ table tbody,
 }
 
 @media (min-width: 992px) {
-    .card-columns {
-        column-count: 2 !important;
-    }
 
     .card-columns.team {
         column-count: 3 !important;
@@ -620,13 +645,15 @@ table tbody,
 }
 
 @media (min-width: 1200px) {
-    .card-columns {
-        column-count: 2 !important;
-    }
+
 
     .card {
         font-size: 15px;
     }
+}
+
+.card-columns {
+    column-count: 1 !important;
 }
 
 .profile-placeholder {
@@ -659,6 +686,7 @@ table tbody,
         font-size: 1rem;
     }
 }
+
 
 /* CARDS ENDS */
 
@@ -693,25 +721,25 @@ a:focus {
     border: none !important;
 }
 
-.sub-table td{
+.sub-table td {
     border: none !important;
     text-align: left;
     vertical-align: center;
 }
 
 
-.sub-td{
+.sub-td {
     padding: 0px !important;
 }
 
-p{
+p {
     margin: 0px !important;
 }
 
 .card-row {
 }
 
-.table td{
+.table td {
     vertical-align: middle !important;
 }
 

@@ -142,25 +142,29 @@
 }
 
 .pincode-input-field {
-    font-size: small !important;
-    border-top-right-radius: 0px !important;
-    border-bottom-right-radius: 0px !important;
-    border-right: none !important;
-}
-
-.pincode-input-field {
+    font-size: medium !important;
+    border: none !important;
+    -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, .1) !important;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .1) !important;
+    height: 60px !important;
+    width: calc(100% - 4rem) !important;
     outline: none !important;
-    border-color: #ced4da !important;
-    box-shadow: none !important;
+    text-align: center;
+    background-color: white !important;
 }
 
 .pincode-reset-btn {
-    background-color: transparent !important;
+    background-color: white !important;
     color: #495057 !important;
+    border-radius: 5px;
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
-    border-left: none !important;
+    border: none !important;
     border-color: #ced4da !important;
+    z-index: 10;
+    height: 60px;
+    -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, .1) !important;
+    box-shadow: 25px 10px 35px rgba(0, 0, 0, .1) !important;
 }
 
 .pincode-reset-btn:focus {
@@ -192,7 +196,35 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.navbar .nav-link {
+.navbar select {
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #555555;
+    padding: 8px 0px;
+}
+
+.navbar select:hover {
+    cursor: pointer;
+}
+
+.navbar select:focus {
+    outline: none;
+}
+
+.navbar.active select {
+    color: #555;
+    font-weight: 500;
+}
+
+.lang {
+    color: black;
+}
+
+.navbar .nav-link,
+.navbar .nav-item,
+.navbar select {
     font-weight: 500;
     color: #fff;
     font-size: small;
@@ -200,7 +232,9 @@
 
 @media (max-width: 576px) {
     .navbar .nav-link,
-    .navbar .dropdown-item {
+    .navbar .dropdown-item,
+    .navbar .nav-item,
+    .navbar select {
         font-size: medium;
     }
 
@@ -262,6 +296,10 @@
     }
 
     .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+
+    .navbar select{
         color: #555;
     }
 }
@@ -601,7 +639,7 @@ table tbody,
     background-color: white !important;
 }
 
-.card-accordion a{
+.card-accordion a {
     color: black !important;
 }
 

@@ -101,15 +101,20 @@
                     <div class="autocomplete row justify-content-center px-lg-5 px-md-3">
                         <div class="col-12">
                             <div class="input-group flex-nowrap">
-                                <input style="" id="myInput" type="text" name="myCountry"
+                                <input value="400009" style="" id="myInput" type="text" name="myCountry"
                                        class="form-control pincode-input-field"
                                        placeholder="Enter your pincode, city or state" aria-label="Username"
                                        aria-describedby="addon-wrapping" autocomplete="autocomplete_off_hack_xfr4!k">
-                                <button type="reset" class="btn btn-danger btn-sm pincode-reset-btn" value="Reset"><i
+                                <button type="reset" id="reset-pin" class="btn btn-danger btn-sm pincode-reset-btn" value="Reset"><i
                                         class="fa fa-times-circle"></i></button>
 
                             </div>
                         </div>
+                        <script>
+                            $('.pincode-reset-btn').click(function () {
+                                $('#myInput').attr('value', '');
+                            })
+                        </script>
 
                         <div class="col-12 mt-2 justify-content-center" style="text-align: center">
                             <h6 id="loc"></h6>
@@ -283,6 +288,7 @@
 
     });
 </script>
+
 
 </body>
 

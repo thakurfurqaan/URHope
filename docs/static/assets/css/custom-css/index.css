@@ -1,3 +1,69 @@
+/* SIDEBAR STARTS */
+button:focus {
+    outline: 0 !important;
+}
+
+.card-custom-title {
+    font-weight: bold;
+    color: #252766;
+}
+
+.partials_sidebar_import {
+    padding-top: 25px;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    z-index: 100;
+    color: white;
+    position: fixed;
+    background-color: white;
+}
+
+.sidebar-title {
+    line-height: normal;
+    align-self: center;
+    justify-self: center;
+    color: #193b68;
+    font-size: x-small;
+    text-align: center;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.sidebar-button {
+    border-radius: 15px;
+    padding: 10px 15px;
+    background-color: #f5f9fe;
+    text-align: center;
+    border: none;
+    color: #193b68;
+    transition: 50ms ease-in-out;
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar-button.active {
+    color: white;
+    background-color: #252766;
+    -webkit-box-shadow: 0px 0px 15px -5px rgb(37, 39, 102);
+    -moz-box-shadow: 0px 0px 15px -5px rgb(37, 39, 102);
+    box-shadow: 0px 0px 15px -5px rgb(37, 39, 102);
+}
+
+.sidebar-button:hover {
+    color: white;
+    background-color: #252766;
+    -webkit-box-shadow: 0px 0px 15px -5px rgb(37, 39, 102);
+    -moz-box-shadow: 0px 0px 15px -5px rgb(37, 39, 102);
+    box-shadow: 0px 0px 15px -5px rgb(37, 39, 102);
+}
+
+.sidebar {
+    text-align: center;
+}
+
+/* SIDEBAR ENDS */
+
 
 .help-options {
     color: white !important;
@@ -14,7 +80,6 @@
     /*width: 250px;*/
     /*align-items: center;*/
     border-radius: 20px;
-    position: relative;
     margin: 15px 0px;
     justify-self: center;
     align-self: center;
@@ -299,7 +364,7 @@
         color: #555;
     }
 
-    .navbar select{
+    .navbar select {
         color: #555;
     }
 }
@@ -337,7 +402,7 @@
 
 .card-custom {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 15px 15px;
     /*border: 1px solid gray;*/
     box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
@@ -702,6 +767,11 @@ table tbody,
 .profile-pic {
     border-radius: 50%;
     width: 190px;
+}
+
+.profile-pic-dashboard{
+    width: 50px;
+    border-radius: 50%;
 }
 
 .social-links {

@@ -44,34 +44,56 @@
 </head>
 
 <body class="landing-page"
-      style="background-size: cover; background: url('static/assets/img/background.png') no-repeat fixed center;">
+      style="background-color: #f5f9fe">
 
 <!-- Navbar -->
-<div class="partials_navbar_import"></div>
+<div class="partials_navbar_import d-block d-lg-none"></div>
 <script type="text/javascript">
     $(document).ready(function () {
         $('.partials_navbar_import').load('partials/partial_navbar.html');
     });
 </script>
-<!-- End Navbar -->
+<!--End Navbar -->
 
-<div class="container-fluid">
-    <div class="col page-title " style="padding-top: 100px; padding-bottom: 25px">
-        <div class="row align-items-center justify-content-center" align="center">
-            <h1 class="font-weight-bold">My Account</h1>
+<!-- Sidebar -->
+<div class="partials_sidebar_import  d-none d-lg-block"></div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.partials_sidebar_import').load('partials/partial_volunteer_sidebar.html');
+    });
+</script>
+<!--End Sidebar -->
+
+<!---New Page Title--->
+<div class="container pl-lg-5 mt-4 mt-lg-0 mb-3">
+    <div class="col page-title " style="padding-top: 50px; padding-bottom: 5px;">
+        <div class="row align-items-center" align="center">
+            <div class="col">
+                <h1 class="font-weight-bold" style="color:#252766; text-align: left">My Profile</h1>
+            </div>
+            <div class="col justify-content-end d-none d-lg-block">
+                <h6 class="font-weight-bold" style="color:#252766; text-align: end">
+                    <img src="static/assets/img/profile1.jpg" class="profile-pic-dashboard" height="50">
+                    &nbsp;
+                    Mike Richards
+                    <span class="badge badge-secondary" style="background-color:#252766">Volunteer</span>
+                </h6>
+            </div>
         </div>
     </div>
 </div>
+<!---New Page Title Ends--->
 
-<div class="container mt-0">
+<!-- Page Content -->
+<div class="container mt-0 pl-lg-5">
     <div class="row justify-content-center">
         <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-2">
 
             <div class="card-custom mt-2 mt-lg-0 help-card">
                 <div class="row justify-content-between align-items-center">
                     <div class="col">
-                        <h6 class="my-3" style="">Basic Details
-                        </h6>
+                        <h5 class="my-3 card-custom-title" style="">Basic Details
+                        </h5>
                     </div>
 
                 </div>
@@ -189,21 +211,30 @@
                     </a>
                 </div>
                 <div style="text-align: center" class=" mb-3  ">
-                    <h5 class="font-weight-bold">Mike Richards</h5>
-                    <h6 class="font-weight-light">Volunteer</h6>
+                    <h5 class="card-custom-title font-weight-bold">Mike Richards</h5>
+                    <span class="badge badge-secondary" style="background-color:#252766">Volunteer</span>
                 </div>
             </div>
         </div>
-
-
     </div>
 </div>
-</div>
+<!-- Page Content Ends-->
 
 
 <br/><br/>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    $('table button i').click(function () {
+        if ($(this).hasClass('fa-angle-down')) {
+            $(this).removeClass('fa-angle-down');
+            $(this).addClass('fa-angle-up');
+        } else {
+            $(this).removeClass('fa-angle-up');
+            $(this).addClass('fa-angle-down');
+        }
+    });
+
+</script>
 
 </body>
 

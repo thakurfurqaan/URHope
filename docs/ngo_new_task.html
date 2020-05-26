@@ -44,34 +44,364 @@
 </head>
 
 <body class="landing-page"
-      style="background-size: cover; background: url('static/assets/img/background.png') no-repeat fixed center;">
+      style="background-color: #f5f9fe">
 
-<!-- Navbar -->
-<div class="partials_navbar_import"></div>
+<div class="partials_navbar_import d-block d-lg-none"></div>
 <script type="text/javascript">
     $(document).ready(function () {
         $('.partials_navbar_import').load('partials/partial_navbar.html');
     });
 </script>
-<!-- End Navbar -->
 
-<div class="container-fluid">
-    <div class="col page-title " style="padding-top: 100px; padding-bottom: 25px">
-        <div class="row align-items-center justify-content-center" align="center">
-            <h1 class="font-weight-bold">New Task</h1>
+<!-- Sidebar -->
+<div class="partials_sidebar_import"></div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.partials_sidebar_import').load('partials/partial_ngo_sidebar.html');
+    });
+</script>
+<!-- Sidebar -->
+
+<!---New Page Title--->
+<div class="container pl-lg-5 mt-4 mt-lg-0 mb-2">
+    <div class="col page-title " style="padding-top: 50px; padding-bottom: 5px;">
+        <div class="row align-items-center" align="center">
+            <div class="col">
+                <h1 class="font-weight-bold" style="color:#252766; text-align: left">Your Dashboard</h1>
+            </div>
+            <div class="col justify-content-end d-none d-lg-block">
+                <h6 class="font-weight-bold" style="color:#252766; text-align: end">
+                    <img src="static/assets/img/profile2.png" class="profile-pic-dashboard" height="50">
+                    &nbsp;
+                    NGO Mumbai
+                    <span class="badge badge-secondary" style="background-color:#252766">NGO</span>
+                </h6>
+            </div>
         </div>
     </div>
 </div>
+<!---New Page Title Ends--->
 
-<div class="container mt-0">
+<!---Page Content Starts--->
+
+
+<div class="container mt-3 pl-lg-5">
     <div class="row justify-content-center">
-        <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-2">
+        <div class="col-lg-6 col-12 px-lg-3 order-lg-2 order-2">
 
             <div class="card-custom mt-2 mt-lg-0 help-card">
                 <div class="row justify-content-between align-items-center">
                     <div class="col">
-                        <h6 class="my-3" style="">Task Details
-                        </h6>
+                        <h5 class="my-3 card-custom-title" style="">My Tasks</h5>
+                    </div>
+                    <table class="table step3-table filter-this-table">
+                        <thead>
+                        <tr>
+                            <th scope="col"><h6>Task</h6></th>
+                            <th scope="col"><h6>Task Type</h6></th>
+                            <th scope="col"><h6>Pincode</h6></th>
+                            <th scope="col"><h6>Details</h6></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <!--========== ROW 1 STARTS =========-->
+
+                        <tr aria-rowspan="2" class="card-row">
+                            <td class="align-middle">
+                                <div class="initiative-heading">
+                                    <h6 class="font-weight-bold mb-0">Provide clothing to the needy</h6>
+                                </div>
+                            </td>
+                            <td class="align-middle">
+                                <p class="m-0">Clothing</p>
+                            </td>
+                            <td class="align-middle">
+                                <p class="m-0">123456</p>
+                            </td>
+                            <td class="align-middle">
+                                <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
+                                        data-target="#collapse1"
+                                        aria-expanded="false" aria-controls="collapseExample">
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="align-middle" hidden>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="sub-td">
+                                <table class="collapse sub-table" id="collapse1">
+                                    <tr>
+                                        <td colspan="1">
+                                            Details of Applied Volunteers
+                                        </td>
+                                        <td colspan="3">
+                                            <a href="">
+                                                <button class="btn btn-sm btn-outline-primary mt-1">
+                                                    Download
+                                                </button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            Task ID
+                                        </td>
+                                        <td colspan="3">
+                                            <div class="initiative-description">
+                                                <p class="text-muted" align="left">1</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            Task Details
+                                        </td>
+                                        <td colspan="3">
+                                            <div class="initiative-description">
+                                                <p class="text-muted" align="left">We need volunteers to deliver the
+                                                    clothes from
+                                                    the
+                                                    main
+                                                    junction to the slum areas
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            Task Creator
+                                        </td>
+                                        <td colspan="3">
+                                            <div class="initiative-description">
+                                                <p class="text-muted" align="left">NGO
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            Volunteers required
+                                        </td>
+                                        <td colspan="2">
+                                            <div class="initiative-description">
+                                                <p class="text-muted" align="left">12
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            Volunteers applied
+                                        </td>
+                                        <td colspan="2">
+                                            <div class="initiative-description">
+                                                <p class="text-muted" align="left">6
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="">
+                                            <p class="mt-1">Contact</p>
+                                        </td>
+                                        <td>
+                                            <div class="initiative-contact align-content-around">
+                                                <a href="tel:1077-240486">
+                                                    <button class="btn btn-sm btn-outline-primary mt-1">01334-235010
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            Website
+                                        </td>
+                                        <td colspan="3">
+                                            <a href="www.urhope.in">
+                                                <button class="btn btn-sm btn-outline-primary mt-1">www.urhope.in
+                                                </button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            <p class="mt-1">Action</p>
+                                        </td>
+                                        <td colspan="3">
+                                            <div style="" class=" mb-2 ">
+                                                <a href="ngo_edit_task.html">
+                                                    <button class="btn btn-success mt-1">Edit Task</button>
+                                                </a>
+                                                <a href="">
+                                                    <button class="btn btn-danger mt-1">Delete Task</button>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!--========== ROW 1 ENDS =========-->
+
+                        <!--========== ROW 2 STARTS =========-->
+
+                        <tr aria-rowspan="2" class="card-row">
+                            <td class="align-middle">
+                                <div class="initiative-heading">
+                                    <h6 class="font-weight-bold mb-0">Provide clothing to the needy</h6>
+                                </div>
+                            </td>
+                            <td class="align-middle">
+                                <p class="m-0">Clothing</p>
+                            </td>
+                            <td class="align-middle">
+                                <p class="m-0">123456</p>
+                            </td>
+                            <td class="align-middle">
+                                <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
+                                        data-target="#collapse2"
+                                        aria-expanded="false" aria-controls="collapseExample">
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="align-middle" hidden>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="sub-td">
+                                <table class="collapse sub-table" id="collapse2">
+                                    <tr>
+                                        <td colspan="1">
+                                            Details of Applied Volunteers
+                                        </td>
+                                        <td colspan="3">
+                                            <a href="">
+                                                <button class="btn btn-sm btn-outline-primary mt-1">
+                                                    Download
+                                                </button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            Task ID
+                                        </td>
+                                        <td colspan="3">
+                                            <div class="initiative-description">
+                                                <p class="text-muted" align="left">1</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            Task Details
+                                        </td>
+                                        <td colspan="3">
+                                            <div class="initiative-description">
+                                                <p class="text-muted" align="left">We need volunteers to deliver the
+                                                    clothes from
+                                                    the
+                                                    main
+                                                    junction to the slum areas
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            Task Creator
+                                        </td>
+                                        <td colspan="3">
+                                            <div class="initiative-description">
+                                                <p class="text-muted" align="left">NGO
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            Volunteers required
+                                        </td>
+                                        <td colspan="2">
+                                            <div class="initiative-description">
+                                                <p class="text-muted" align="left">12
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            Volunteers applied
+                                        </td>
+                                        <td colspan="2">
+                                            <div class="initiative-description">
+                                                <p class="text-muted" align="left">6
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="">
+                                            <p class="mt-1">Contact</p>
+                                        </td>
+                                        <td>
+                                            <div class="initiative-contact align-content-around">
+                                                <a href="tel:1077-240486">
+                                                    <button class="btn btn-sm btn-outline-primary mt-1">01334-235010
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            Website
+                                        </td>
+                                        <td colspan="3">
+                                            <a href="www.urhope.in">
+                                                <button class="btn btn-sm btn-outline-primary mt-1">www.urhope.in
+                                                </button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            <p class="mt-1">Action</p>
+                                        </td>
+                                        <td colspan="3">
+                                            <div style="" class=" mb-2 ">
+                                                <a href="ngo_edit_task.html">
+                                                    <button class="btn btn-success mt-1">Edit Task</button>
+                                                </a>
+                                                <a href="">
+                                                    <button class="btn btn-danger mt-1">Delete Task</button>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!--========== ROW 2 ENDS =========-->
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-1">
+
+            <div class="card-custom mt-2 mt-lg-0 help-card">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <h5 class="my-3 card-custom-title" style="">Enter Task Details
+                        </h5>
                     </div>
                 </div>
                 <div class="form-group mb-3  volunteer-field">
@@ -83,7 +413,8 @@
                         </div>
                         <div class="col">
                             <label for="exampleInputEmail1">Task Creator Name</label>
-                            <input type="text" class="form-control" placeholder="Task Creator Name" aria-label="Username"
+                            <input type="text" class="form-control" placeholder="Task Creator Name"
+                                   aria-label="Username"
                                    aria-describedby="basic-addon1">
                         </div>
                     </div>
@@ -115,7 +446,7 @@
                         </div>
                     </div>
                 </div>
-                 <div class="form-group mb-3  volunteer-field">
+                <div class="form-group mb-3  volunteer-field">
                     <div class="row">
                         <div class="col">
                             <label for="exampleInputEmail1">Pincode</label>
@@ -145,10 +476,26 @@
 </div>
 
 
+<!---Page Content Ends--->
+
 <br/><br/>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+<script>
+    $('table button i').click(function () {
+        if ($(this).hasClass('fa-angle-down')) {
+            $(this).removeClass('fa-angle-down');
+            $(this).addClass('fa-angle-up');
+        } else {
+            $(this).removeClass('fa-angle-up');
+            $(this).addClass('fa-angle-down');
+        }
+    });
+</script>
+
 </body>
 
 </html>
+
+
